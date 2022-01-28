@@ -1,15 +1,32 @@
 using UnityEngine;
-using TMPro;
-using YamlDotNet.Serialization;
-using System.IO;
-using System.Linq;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+public class FormEditor : ComponentEditor<Form> {
+    [SerializeField] private StatsEditor statsEditor;
 
-public class FormEditor
+    public FormEditor(VisualElement visualElement) {
+        RegisterBaseFields(visualElement);
+        statsEditor = new StatsEditor(visualElement.Q<VisualElement>("StatsEditor"));
+        ClearAllFields();
+    }
+
+    protected override void Save() {
+        Component.BaseStats = statsEditor.stats;
+        nameInput.focusable = false;
+        CharacterComponentLoader.SaveComponent(Component);
+    }
+
+    protected override void FillCustomFields() {
+        statsEditor.fill(base.Component.BaseStats);
+    }
+    protected override void ClearCustomFields() {
+        statsEditor.fill(CharacterStats.defaultStats);
+    }
+}
+
+/*
+public class FormEditorOld
 {
-    Form[] allForms;
-
     [HideInInspector][SerializeField] private Form Form;
 
     private VisualElement visualElement;
@@ -63,6 +80,7 @@ public class FormEditor
         statsEditor.fill(CharacterStats.defaultStats);
         nameInput.focusable = true;
     }
-
+    
 
 }
+*/

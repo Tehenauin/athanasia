@@ -10,4 +10,8 @@ public class Form : CharacterComponent{
         BaseStats = form.BaseStats;
     }
     public Form() { }
+
+    public override object Clone() {
+        return new Form(this);
+    }
 }
