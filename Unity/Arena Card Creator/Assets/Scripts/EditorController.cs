@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class EditorController : MonoBehaviour
-{
+public class EditorController : MonoBehaviour {
     private VisualElement root;
     private Button editSelectedButton;
     private Button newFromSelectedButton;
