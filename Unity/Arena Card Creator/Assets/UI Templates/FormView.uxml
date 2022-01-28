@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="Style.uss" />
+    <ui:GroupBox name="FormView" focusable="true" class="RoundCorners ContentPanel" style="margin-top: 0; margin-bottom: 5px; margin-left: 0; margin-right: 0;">
+        <ui:VisualElement class="RoundCorners" style="flex-direction: row; justify-content: space-between; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+            <ui:Label text="Name" display-tooltip-when-elided="true" name="Name" style="flex-direction: column; -unity-text-align: upper-left; white-space: nowrap;" />
+            <ui:Label text="X" display-tooltip-when-elided="true" name="Bounty" style="flex-direction: column;" />
+        </ui:VisualElement>
+        <ui:Label text="X  Y  Z" display-tooltip-when-elided="true" name="Stats" style="white-space: nowrap; -unity-text-align: upper-left;" />
+    </ui:GroupBox>
+</ui:UXML>

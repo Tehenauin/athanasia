@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="FormEditor" />
+    <Style src="Style.uss" />
+    <ui:GroupBox class="Borderless" style="flex-direction: row; align-items: stretch; flex-wrap: nowrap; height: 100%; flex-basis: auto; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: flex-start; width: 100%;">
+        <ui:VisualElement class="Borderless" style="width: 50%; height: 100%;">
+            <ui:VisualElement class="ContainerPanel">
+                <ui:Label text="Filter" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 16px;" />
+                <ui:DropdownField label="Component Type" index="-1" name="ComponentTypeDropdown" class="Dropdown" />
+            </ui:VisualElement>
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="ScrollView" class="ContentPanel ContainerPanel" style="width: auto; background-color: rgb(159, 151, 140); padding-top: 5px; padding-bottom: 0; height: auto; align-items: flex-start;" />
+        </ui:VisualElement>
+        <ui:GroupBox class="Borderless" style="width: 50%; margin-left: 5px; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: flex-start; flex-wrap: nowrap;">
+            <ui:GroupBox name="Headbar" class="ContentPanel ContainerPanel" style="width: 100%; height: 100px; margin-bottom: 5px; justify-content: space-between; margin-left: 0; margin-right: 0; margin-top: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; display: flex; overflow: visible; flex-direction: row;">
+                <ui:VisualElement style="max-width: 100px; justify-content: space-around;">
+                    <ui:Button text="edit selected" display-tooltip-when-elided="true" name="EditSelectedButton" class="Button" />
+                    <ui:Button text="new from Selected" display-tooltip-when-elided="true" name="NewFromSelectedButton" class="Button" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row; max-width: 150px;">
+                    <ui:VisualElement style="justify-content: space-around;">
+                        <ui:Button text="new Form" display-tooltip-when-elided="true" name="NewFormButton" class="Button" />
+                        <ui:Button text="new Class" display-tooltip-when-elided="true" name="NewClassButton" class="Button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="justify-content: space-around;">
+                        <ui:Button text="new Gene" display-tooltip-when-elided="true" name="NewGeneButton" class="Button" />
+                        <ui:Button text="new Ability" display-tooltip-when-elided="true" name="NewAbilityButton" class="Button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:GroupBox>
+            <ui:Instance template="FormEditor" name="FormEditor" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

@@ -1,0 +1,186 @@
+.ContentPanel {
+    background-color: rgb(209, 203, 194);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.ContentPanel:checked {
+    background-color: rgb(147, 228, 231);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ContentPanel:hover {
+    background-color: rgb(229, 220, 208);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ContainerPanel {
+    background-color: rgb(159, 151, 140);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.Borderless {
+    background-color: rgba(209, 203, 194, 0);
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.StatsField > #unity-text-input {
+    background-color: rgb(255, 255, 255);
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: stretch;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    min-height: auto;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+}
+
+.StatsField > Label {
+    background-color: rgba(209, 203, 194, 0);
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 20px;
+    align-items: stretch;
+    justify-content: flex-start;
+    -unity-text-align: middle-left;
+    width: auto;
+    max-width: 100%;
+}
+
+.StatsField {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.InputField {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.InputField > #unity-text-input {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 25px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    border-left-width: -10px;
+    border-right-width: -10px;
+    border-top-width: -10px;
+    border-bottom-width: -10px;
+}
+
+.Button {
+    background-color: rgb(209, 203, 194);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 40px;
+    white-space: normal;
+}
+
+.Button:hover {
+    background-color: rgb(229, 220, 208);
+}
+
+.Dropdown > VisualElement {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 50%;
+    width: 50%;
+    margin-left: 4px;
+    margin-right: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: rgba(209, 203, 194, 255);
+}
+
+.Dropdown > Label {
+    width: auto;
+    -unity-text-align: middle-left;
+    min-width: 30px;
+}
+
+.Dropdown {
+    height: 40px;
+}

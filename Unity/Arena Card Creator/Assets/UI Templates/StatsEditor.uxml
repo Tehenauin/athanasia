@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="Style.uss" />
+    <ui:GroupBox name="StatsEditor" style="flex-direction: row; justify-content: space-around; flex-wrap: nowrap;">
+        <uie:IntegerField label="HP" value="0" name="HpInput" class="StatsField" />
+        <uie:IntegerField label="Armor" value="0" name="ArmorInput" class="StatsField" />
+        <uie:IntegerField label="Resist" value="0" name="ResistanceInput" class="StatsField" />
+    </ui:GroupBox>
+</ui:UXML>

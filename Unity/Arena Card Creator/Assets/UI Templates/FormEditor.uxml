@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Template name="StatsEditor" src="StatsEditor.uxml" />
+    <Style src="Style.uss" />
+    <ui:GroupBox name="FormEditor" class="ContainerPanel" style="margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; display: flex;">
+        <ui:TextField picking-mode="Ignore" label="Name" text="test" name="NameInput" class="InputField" />
+        <uie:IntegerField label="Bounty" value="0" name="BountyInput" class="InputField StatsField" />
+        <ui:Instance template="StatsEditor" name="StatsEditor" />
+        <ui:Button text="Save" display-tooltip-when-elided="true" name="SaveButton" class="ContentPanel Button" />
+    </ui:GroupBox>
+</ui:UXML>
