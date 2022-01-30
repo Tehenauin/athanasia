@@ -36,7 +36,7 @@ public class FormDrawer : CharacterComponentDrawer {
         Component = component;
         name.text = Form.Name;
         bounty.text = Form.Bounty.ToString();
-        stats.text = Form.BaseStats.ToString();
+        stats.text = Form.Stats.ToString();
     }
 }
 public class GeneDrawer : CharacterComponentDrawer {

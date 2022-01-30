@@ -1,4 +1,4 @@
-BaseStats:
+Stats:
   hp: 10
   armor: 3
   resistance: 3

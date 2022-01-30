@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Gene : CharacterComponent
 {
-    public CharacterStats stats;
-    public string description;
+    public CharacterStats Stats;
+    public string Description;
 
     public Gene(Gene gene) {
         base.CopyBaseValues(gene);
-        stats = gene.stats;
-        description = gene.description;
+        Stats = gene.Stats;
+        Description = gene.Description;
     }
     public Gene() {}
 
