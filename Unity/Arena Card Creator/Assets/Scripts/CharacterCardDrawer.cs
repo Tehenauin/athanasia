@@ -1,3 +1,5 @@
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterCardDrawer{
@@ -19,7 +21,7 @@ public class Character{
 }
 
 public class ComponentLibrary{
-  public T GetCharacterComponent<T> where T is CharacterComponent(string componentName){
-      
+  public T GetCharacterComponent<T>  (string componentName) where T : CharacterComponent {
+        return null;   
   }
 }
